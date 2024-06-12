@@ -1,3 +1,21 @@
 # work-code
 code hacks
-[New WinRAR ZIP archive.zip](https://github.com/user-attachments/files/15802652/New.WinRAR.ZIP.archive.zip)
+[Uploading p
+    
+    public class Mate {
+    
+        
+    
+     public static void main(String[] args) {
+          int time = 20;
+          if (time < 18) {
+            System.out.println("Good day.");
+          } else {
+            System.out.println("Good evening.");
+          }  
+        }
+      }
+    
+
+apafathela.java…]()
+
