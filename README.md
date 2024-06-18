@@ -18,4 +18,5 @@ code hacks
     
 
 apafathela.java…]()
+//simple program in c language to input name and give an output
 
