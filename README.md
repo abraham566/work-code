@@ -9,9 +9,9 @@ code hacks
      public static void main(String[] args) {
           int time = 2;
           if (time < 18) {
-            System.out.println("Good day.");
+            System.out.println("name.");
           } else {
-            System.out.println("Good evening.");
+            System.out.println("marks.");
           }  
         }
       }
