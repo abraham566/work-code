@@ -1,4 +1,53 @@
-# work-code
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TaskManager {
+    public static void main(String[] args) {
+        ArrayList<String> tasks = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Choose an option:");
+            System.out.println("1. Add task");
+            System.out.println("2. Mark task as completed");
+            System.out.println("3. View to-do list");
+            System.out.println("4. Exit");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter task: ");
+                    String task = scanner.nextLine();
+                    tasks.add(task);
+                    System.out.println("Task added!");
+                    break;
+                case 2:
+                    System.out.print("Enter task index to mark as completed: ");
+                    int index = scanner.nextInt();
+                    if (index >= 0 && index < tasks.size()) {
+                        tasks.remove(index);
+                        System.out.println("Task marked as completed!");
+                    } else {
+                        System.out.println("Invalid index.");
+                    }
+                    break;
+                case 3:
+                    System.out.println("To-do list:");
+                    for (int i = 0; i < tasks.size(); i++) {
+                        System.out.println(i + ". " + tasks.get(i));
+                    }
+                    break;
+                case 4:
+                    System.out.println("Exiting. Have a great day!");
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
+}# work-code
 code hacks
 [Uploading p
     
