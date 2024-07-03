@@ -84,7 +84,7 @@ public class Reallife {
         int sum = 0;
         for (int i = 0; i < age.length; i++) {
             sum += age[i];
-        }
+
         System.out.print("\n\nThe sum is: " + sum);
         double avg = sum/age.length;
         System.out.println("\n\nThe avarage is: " + avg);
@@ -93,4 +93,4 @@ public class Reallife {
 
 }
 //simple program in c language to input name and give an output
-
+![WhatsApp Image 2024-07-03 at 09 54 40_745e1755](https://github.com/abraham566/work-code/assets/172487457/721aeb61-873b-4e52-99b5-8f26c280d8d6)
