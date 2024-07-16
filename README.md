@@ -94,3 +94,87 @@ public class Reallife {
 }
 //simple program in c language to input name and give an output
 ![WhatsApp Image 2024-07-03 at 09 54 40_745e1755](https://github.com/abraham566/work-code/assets/172487457/721aeb61-873b-4e52-99b5-8f26c280d8d6)
+[16/07/2024 10:52 AM] : //Java program to display today`s date
+//import date
+import java.util.Date;
+public class date{
+ public static void main(String args[]) {
+ //main class
+ Date d = new Date();
+ //Display time and date using toString{}
+ System.out.println(d.toString());
+
+ }
+}
+[16/07/2024 10:53 AM] : r;
+import java.util.Formatter;
+
+public class MainClass{
+   public static void main(String args[]) {
+      Formatter fmt = new Formatter();
+      Calendar cal = Calendar.getInstance();
+      fmt = new Formatter();
+      fmt.format("%tc", cal);
+      System.out.println(fmt);
+   }
+}
+[16/07/2024 11:11 AM] : import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class AgeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input birthdate (format: yyyy-MM-dd)
+        System.out.print("Enter your birthdate (yyyy-MM-dd): ");
+        String birthdateStr = scanner.nextLine();
+        LocalDate birthdate = LocalDate.parse(birthdateStr);
+
+        // Current date
+        LocalDate currentDate = LocalDate.now();
+
+        // Calculate age
+        int age = calculateAge(birthdate, currentDate);
+
+        // Output age
+        System.out.println("Your age is: " + age + " years");
+    }
+
+    public static int calculateAge(LocalDate birthdate, LocalDate currentDate) {
+        return Period.between(birthdate, currentDate).getYears();
+    }
+}
+[16/07/2024 11:57 AM] droidRAZR: // imports
+import java.util.*;
+import java.time.*;
+
+//main Class
+
+public class date{
+
+//main method
+		 public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        LocalDate currentDate = LocalDate.now();
+        System.out.print("Enter year :");
+        int year = scanner.nextInt();
+        System.out.print("Enter month:  ");
+        int month = scanner.nextInt();
+        System.out.print("Enter day : ");
+        int day = scanner.nextInt();
+
+
+        LocalDate inputDate = LocalDate.of(year, month, day);
+
+       
+        Period period = Period.between(inputDate, currentDate);
+
+       
+        System.out.print("Yours is" +period.getYears());
+
+        scanner.close();
+		}
+}
